@@ -11,31 +11,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
   <div class="noise"></div>
 
   <header class="site-header">
     <a class="brand" href="#top"><span>ZH</span> Md Zahid Hasan</a>
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" id="primary-nav" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
     </nav>
     <a class="nav-cta" href="mailto:hasanzahid8096@gmail.com">Let's Talk <span>↗</span></a>
-  </header>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button></header>
 
-  <main id="top">
+  <main id="main">
     <section class="hero section">
       <div class="hero-copy reveal">
         <div class="eyebrow"><i></i> Available for Shopify projects</div>
-        <h1>Shopify stores built to feel <span>premium</span> and perform beautifully.</h1>
-        <p class="hero-lead">I'm <strong>Md Zahid Hasan</strong>, a Shopify Developer focused on Liquid development, custom sections, theme customization, app integrations and conversion-focused ecommerce experiences.</p>
+        <h1>Shopify stores.<br><span>Beautifully built.</span><br>Built for business.</h1>
+        <p class="hero-lead">I’m <strong>Md Zahid Hasan</strong>, a Shopify developer turning brand ideas into polished storefronts—with custom Liquid, thoughtful user experiences and clean implementation.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects">View live projects <span>↘</span></a>
           <a class="button ghost" href="mailto:hasanzahid8096@gmail.com">Email me</a>
         </div>
-        <div class="hero-meta">
+        <div class="project-proof"><strong>40+</strong><span>E-commerce projects delivered</span><a href="#projects">Explore my work ↗</a></div><div class="hero-meta">
           <div><strong>Shopify</strong><span>Liquid & OS 2.0</span></div>
           <div><strong>Frontend</strong><span>HTML · CSS · JS</span></div>
           <div><strong>Based in</strong><span>Dhaka, Bangladesh</span></div>
@@ -44,7 +45,7 @@
 
       <div class="hero-visual reveal">
         <div class="portrait-frame">
-          <img src="assets/zahid-hero.jpg" alt="Md Zahid Hasan - Shopify Developer">
+          <img decoding="async" fetchpriority="high" src="assets/zahid-hero.jpg" alt="Md Zahid Hasan - Shopify Developer">
           <div class="portrait-shine"></div>
           <div class="floating-card top-card">
             <span class="shopify-dot">S</span>
@@ -77,15 +78,15 @@
       <div class="section-head">
         <div>
           <div class="section-kicker">02 / SELECTED WORK</div>
-          <h2>Live Shopify projects</h2>
+          <h2>Selected work.<br>Real storefronts.</h2>
         </div>
-        <p>A selection of ecommerce experiences across healthcare, home improvement, lifestyle, printing, fragrance and apparel.</p>
+        <p>Twelve Shopify projects across healthcare, luxury, food, lifestyle and sport. Explore the design, then visit the live store.</p>
       </div>
 
-      <div class="project-grid">
-        <article class="project-card featured reveal">
+      <div class="project-toolbar"><div class="filter-list" role="group" aria-label="Filter projects"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All projects <span>12</span></button><button type="button" class="filter" data-filter="lifestyle" aria-pressed="false">Lifestyle & luxury</button><button type="button" class="filter" data-filter="specialist" aria-pressed="false">Specialist stores</button></div><span id="project-count" role="status" aria-live="polite">12 projects</span></div><div class="project-grid">
+        <article data-category="specialist" class="project-card featured reveal">
           <a class="project-image" href="https://carrylesssupply.com/" target="_blank" rel="noopener">
-            <img src="assets/carryless.png" alt="Carryless Supply Shopify project">
+            <img decoding="async" loading="lazy" src="assets/carryless.png" alt="Carryless Supply Shopify project">
             <span class="project-number">01</span>
           </a>
           <div class="project-info">
@@ -93,76 +94,80 @@
             <h3>Carryless Supply</h3>
             <p>Product-led ecommerce experience for professional patient-handling and emergency-use products, with retail and wholesale purchase paths.</p>
             <a href="https://carrylesssupply.com/" target="_blank" rel="noopener">Visit live store ↗</a>
-          </div>
+          <button type="button" class="preview-button" data-preview="assets/carryless.png" data-title="Carryless Supply" aria-label="Preview Carryless Supply">Preview design ⤢</button></div>
         </article>
+<article class="project-card reveal" data-category="specialist"><a class="project-image" href="https://theinkedmart.com/" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="assets/the-inked-mart.png" alt="The Inked Mart storefront design"><span class="project-number">02</span></a><div class="project-info"><div><span class="pill">Shopify</span><span class="pill">Collectibles</span></div><h3>The Inked Mart</h3><p>A trading card storefront with game-based categories, new arrivals, popular sets and collector-focused product discovery.</p><a href="https://theinkedmart.com/" target="_blank" rel="noopener">Visit live store ↗</a><button type="button" class="preview-button" data-preview="assets/the-inked-mart.png" data-title="The Inked Mart" aria-label="Preview The Inked Mart">Preview design ⤢</button></div></article>
+<article class="project-card reveal" data-category="specialist"><a class="project-image" href="https://www.wzfoods.co.uk/" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="assets/wz-foods.png" alt="WZ Foods storefront design"><span class="project-number">03</span></a><div class="project-info"><div><span class="pill">Shopify</span><span class="pill">Food & Beverage</span></div><h3>WZ Foods</h3><p>A bright, product-focused honey storefront featuring flavour collections, bundles, customer stories and clear product education.</p><a href="https://www.wzfoods.co.uk/" target="_blank" rel="noopener">Visit live store ↗</a><button type="button" class="preview-button" data-preview="assets/wz-foods.png" data-title="WZ Foods" aria-label="Preview WZ Foods">Preview design ⤢</button></div></article>
+<article class="project-card reveal" data-category="lifestyle"><a class="project-image" href="https://auvierjewelry.com/" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="assets/auvier-jewelry.png" alt="Auvier Jewelry storefront design"><span class="project-number">04</span></a><div class="project-info"><div><span class="pill">Shopify</span><span class="pill">Fine Jewelry</span></div><h3>Auvier Jewelry</h3><p>An editorial fine jewelry storefront combining lifestyle imagery, refined collection layouts and a considered luxury shopping experience.</p><a href="https://auvierjewelry.com/" target="_blank" rel="noopener">Visit live store ↗</a><button type="button" class="preview-button" data-preview="assets/auvier-jewelry.png" data-title="Auvier Jewelry" aria-label="Preview Auvier Jewelry">Preview design ⤢</button></div></article>
+<article class="project-card reveal" data-category="specialist"><a class="project-image" href="https://repflexgk.com/" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="assets/repflex-gk.png" alt="Repflex GK storefront design"><span class="project-number">05</span></a><div class="project-info"><div><span class="pill">Shopify</span><span class="pill">Sports</span></div><h3>Repflex GK</h3><p>A bold goalkeeper glove storefront with product comparisons, performance-led storytelling and clear routes to shop the collection.</p><a href="https://repflexgk.com/" target="_blank" rel="noopener">Visit live store ↗</a><button type="button" class="preview-button" data-preview="assets/repflex-gk.png" data-title="Repflex GK" aria-label="Preview Repflex GK">Preview design ⤢</button></div></article>
 
-        <article class="project-card reveal">
+        <article data-category="specialist" class="project-card reveal">
           <a class="project-image" href="https://www.britishshutters.co.uk/" target="_blank" rel="noopener">
-            <img src="assets/british-shutters.png" alt="British Shutters Shopify project">
-            <span class="project-number">02</span>
+            <img decoding="async" loading="lazy" src="assets/british-shutters.png" alt="British Shutters Shopify project">
+            <span class="project-number">06</span>
           </a>
           <div class="project-info">
             <div><span class="pill">Shopify</span><span class="pill">Custom UX</span></div>
             <h3>British Shutters</h3>
             <p>Made-to-measure shutters storefront with product education, guided buying flows and quote-focused customer journeys.</p>
             <a href="https://www.britishshutters.co.uk/" target="_blank" rel="noopener">Visit live store ↗</a>
-          </div>
+          <button type="button" class="preview-button" data-preview="assets/british-shutters.png" data-title="British Shutters" aria-label="Preview British Shutters">Preview design ⤢</button></div>
         </article>
 
-        <article class="project-card reveal">
+        <article data-category="lifestyle" class="project-card reveal">
           <a class="project-image image-swap" href="https://shop.markofvalor.com/" target="_blank" rel="noopener">
-            <img class="first" src="assets/mark-of-valor-1.png" alt="Mark of Valor Shopify project">
-            <img class="second" src="assets/mark-of-valor-2.png" alt="Mark of Valor alternate storefront view">
-            <span class="project-number">03</span>
+            <img decoding="async" loading="lazy" class="first" src="assets/mark-of-valor-1.png" alt="Mark of Valor Shopify project">
+            <img decoding="async" loading="lazy" class="second" src="assets/mark-of-valor-2.png" alt="Mark of Valor alternate storefront view">
+            <span class="project-number">07</span>
           </a>
           <div class="project-info">
             <div><span class="pill">Shopify</span><span class="pill">Apparel</span></div>
             <h3>Mark of Valor</h3>
             <p>Bold apparel storefront with collection-led merchandising, branded product presentation and a focused visual identity.</p>
             <a href="https://shop.markofvalor.com/" target="_blank" rel="noopener">Visit live store ↗</a>
-          </div>
+          <button type="button" class="preview-button" data-preview="assets/mark-of-valor-1.png" data-title="Mark of Valor" aria-label="Preview Mark of Valor">Preview design ⤢</button></div>
         </article>
 
-        <article class="project-card reveal">
+        <article data-category="lifestyle" class="project-card reveal">
           <a class="project-image" href="https://dragonsandwinds.com/" target="_blank" rel="noopener">
-            <img src="assets/dragons-winds.png" alt="Dragons and Winds Shopify project">
-            <span class="project-number">04</span>
+            <img decoding="async" loading="lazy" src="assets/dragons-winds.png" alt="Dragons and Winds Shopify project">
+            <span class="project-number">08</span>
           </a>
           <div class="project-info">
             <div><span class="pill">Shopify</span><span class="pill">Lifestyle</span></div>
             <h3>Dragons &amp; Winds</h3>
             <p>Editorial ecommerce presentation for a Mahjong brand, balancing storytelling, collections and a soft premium visual system.</p>
             <a href="https://dragonsandwinds.com/" target="_blank" rel="noopener">Visit live store ↗</a>
-          </div>
+          <button type="button" class="preview-button" data-preview="assets/dragons-winds.png" data-title="Dragons &amp; Winds" aria-label="Preview Dragons &amp; Winds">Preview design ⤢</button></div>
         </article>
 
-        <article class="project-card reveal">
+        <article data-category="specialist" class="project-card reveal">
           <a class="project-image" href="https://buckeyeprintco.com/" target="_blank" rel="noopener">
-            <img src="assets/buckeye.png" alt="Buckeye Print Co Shopify project">
-            <span class="project-number">05</span>
+            <img decoding="async" loading="lazy" src="assets/buckeye.png" alt="Buckeye Print Co Shopify project">
+            <span class="project-number">09</span>
           </a>
           <div class="project-info">
             <div><span class="pill">Shopify</span><span class="pill">B2B / Retail</span></div>
             <h3>Buckeye Print Co</h3>
             <p>Professional DTF supplies storefront with clear product categories, strong merchandising and print-shop focused positioning.</p>
             <a href="https://buckeyeprintco.com/" target="_blank" rel="noopener">Visit live store ↗</a>
-          </div>
+          <button type="button" class="preview-button" data-preview="assets/buckeye.png" data-title="Buckeye Print Co" aria-label="Preview Buckeye Print Co">Preview design ⤢</button></div>
         </article>
 
-        <article class="project-card reveal">
+        <article data-category="lifestyle" class="project-card reveal">
           <a class="project-image" href="https://houseofoudkw.com/" target="_blank" rel="noopener">
-            <img src="assets/house-of-oud.png" alt="House of Oud Kuwait Shopify project">
-            <span class="project-number">06</span>
+            <img decoding="async" loading="lazy" src="assets/house-of-oud.png" alt="House of Oud Kuwait Shopify project">
+            <span class="project-number">10</span>
           </a>
           <div class="project-info">
             <div><span class="pill">Shopify</span><span class="pill">Luxury</span></div>
             <h3>House of Oud KW</h3>
             <p>Luxury fragrance ecommerce experience with premium category presentation, brand discovery and conversion-focused merchandising.</p>
             <a href="https://houseofoudkw.com/" target="_blank" rel="noopener">Visit live store ↗</a>
-          </div>
+          <button type="button" class="preview-button" data-preview="assets/house-of-oud.png" data-title="House of Oud KW" aria-label="Preview House of Oud KW">Preview design ⤢</button></div>
         </article>
 
-        <article class="project-card no-image reveal">
+        <article data-category="specialist" class="project-card no-image reveal">
           <div class="no-image-art"><span>J</span><small>LIVE SHOPIFY PROJECT</small></div>
           <div class="project-info">
             <div><span class="pill">Shopify</span><span class="pill">Custom Development</span></div>
@@ -172,12 +177,12 @@
           </div>
         </article>
 
-        <article class="project-card no-image reveal">
+        <article data-category="lifestyle" class="project-card no-image reveal">
           <div class="no-image-art shophaa"><span>SH</span><small>LIVE SHOPIFY PROJECT</small></div>
           <div class="project-info">
             <div><span class="pill">Shopify</span><span class="pill">Ecommerce</span></div>
             <h3>ShopHaa</h3>
-            <p>Live Shopify ecommerce project. This portfolio card intentionally uses no website screenshot.</p>
+            <p>A Shopify storefront with clear product presentation and a streamlined path from browsing to purchase.</p>
             <a href="https://www.shophaa.com/" target="_blank" rel="noopener">Visit live store ↗</a>
           </div>
         </article>
@@ -270,5 +275,5 @@
   </footer>
 
   <script src="script.js"></script>
-</body>
+<dialog id="preview-dialog" aria-labelledby="preview-title"><div class="preview-header"><h2 id="preview-title">Project preview</h2><button type="button" id="close-preview" aria-label="Close project preview">Close ×</button></div><div class="preview-content"><img id="preview-image" alt=""></div></dialog></body>
 </html>
